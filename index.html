@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Currículo - Emanuel</title>
+</head>
+<!--
+   . =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= .
+   .                                                                                             .
+   . Página realizada pelo aluno Emanuel Vinícius Sacoman da turma de Engenharia de Software.    .
+   .                             ------------------------                (segundo perído)        .
+   .                                                                                             .
+   . O site conta com:                                                                           .
+   . Elementos de HTML, tais como: <h1>, <h3>, <p>, <div>, <br>, <hr>...;                        .
+   . Elementos de CSS: Funções para estilização de texto (fontes, sombreados, alinhamento...),   .
+   . página com um padding de 1%, imagens com animação de Zoom Out e Manipulação de Opacidade e  .
+   . elementos responsivos.                                                                      .
+   .                                                                                             .
+   . =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= .
+-->
+
+<body>
+    <h1>EMANUEL VINÍCIUS SACOMAN</h1>
+    <br>
+    <div id="info">
+        <p>
+        <div style="float: left"><img src="imagens/marcador.png" width="22" height="22" alt="Marcador"></div>TURVO - PR
+        </p>
+        <p>
+        <div style="float: left"><img src="imagens/whatsapp.png" width="22" height="22" alt="Whatsapp"></div>42 9
+        98090971</p>
+        <p>
+        <div style="float: left"><img src="imagens/email.png" width="22" height="22" alt="Email"></div>
+        emanuelsacoman@gmail.com</p>
+        <p>
+        <div style="float: left"><img src="imagens/facebook.png" width="22" height="22" alt="Facebook"></div>* link do
+        facebook papapa *</p>
+    </div>
+    <br>
+    <h3>
+        <div style="float: left"><img src="imagens/chapeu-de-graduacao.png" width="30" height="30" alt="Graduação">
+        </div>EDUCAÇÃO
+    </h3>
+    <hr>
+    <p>- Bacharelado em Engenharia de Software - <a href="https://www.guairaca.com.br" target="_blank">
+            <b>UniGuairacá</b> </a>(segundo período); <br> - Técnico em Informática para Internet - SENAI (1000 hrs);
+        <br> - Auxiliar de Linha de Produção - Modalidade Aprendizagem Industrial Básica - SENAI (1980 hrs); <br> -
+        Auxiliar Administrativo - Caminho da Profissão - SENAI (160 hrs); <br> - Programa de Inclusão Social -
+        Introdução a Informática - World, Excel, E-mail e internet - SENAR (40 hrs);</p>
+    <br>
+    <h3>
+        <div style="float: left"><img src="imagens/documento.png" width="30" height="30" alt="Documento"></div>
+        HABILIDADES
+    </h3>
+    <hr>
+    <p>- Comunicação Assertiva; <br> - Trabalhar em Equipe; <br> - Resiliente e Flexível; <br> - Empatia; <br> - Ética;
+    </p>
+    <br>
+    <h3>
+        <div style="float: left"><img src="imagens/experiencia.png" width="30" height="30" alt="Experiência"></div>
+        EXPERIÊNCIA PROFISSIONAL
+    </h3>
+    <hr>
+    <p>- Auxiliar de Linha de Produção - Aprendiz na Área de Tecnologia da Informação - SENAI/IBEMA (1980 hrs).</p>
+    <br>
+    <br>
+    <hr>
+    <div id="final">
+        <p>Turvo, 03 de Agosto de 2022</p>
+    </div>
+    <style>
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: -1px -1px white, 2px 2px rgb(235, 235, 235)
+        }
+
+        h1,
+        h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: normal;
+            font-stretch: ultra-expanded;
+            font-weight: 500;
+            text-shadow: -1px -1px white, 2px 2px rgb(235, 235, 235)
+        }
+
+        h3 {
+            line-height: 0%;
+        }
+
+        #info {
+            font-size: 14px;
+            text-shadow: -1px -1px white, 2px 2px rgb(235, 235, 235)
+        }
+
+        #final {
+            font-size: 14px;
+            text-align: right;
+        }
+
+        img,
+        a {
+            transition: all 1s;
+            cursor: pointer;
+            opacity: 0.5;
+            padding-right: 2px;
+        }
+
+        img:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        body {
+            padding: 1%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: clamp(1.75em, 1em + 3vw, 2.5em);
+        }
+
+        h3 {
+            font-size: clamp(1.25em, 0.25em + 2vw, 1.75em);
+        }
+
+        p,
+        img {
+            font-size: clamp(1em, 0, 25em + 1vw, 1.75em);
+        }
+
+        h1 {
+            font: "Oswald", sans-serif;
+            letter-spacing: 0;
+            padding: .25em 0 .325em;
+            display: block;
+            margin: 0 auto;
+            text-shadow: 0 0 80px rgba(0, 0, 0, 0.5);
+
+
+            /* peguei da internet essa parte*/
+
+            background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: aitf 80s linear infinite;
+
+            -webkit-transform: translate3d(0, 0, 0);
+            -webkit-backface-visibility: hidden;
+        }
+
+        @-webkit-keyframes aitf {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        a {
+            color: #222;
+        }
+
+        a:hover {
+            color: #ec5840;
+        }
+    </style>
+</body>
+
+</html>
